@@ -1,0 +1,18 @@
+.view26_submittedResultWrapper {
+  position: relative !important;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.dataTables_wrapper {
+  display: inline-block;
+  width: 100%;
+  white-space: normal;
+  vertical-align: top;
+}
+
+table {
+  max-width: none !important;
+  min-height: 0% !important;
+}

@@ -1,0 +1,8 @@
+<?jelly escape-by-default='true'?>
+<!--
+  This view is used to render the installed plugins page.
+-->
+<div>
+  This plugin collects and reports unit test results to view26. It supports any testing frameworks which are capable of generating JUnit XML format test reports.
+</div>
+
