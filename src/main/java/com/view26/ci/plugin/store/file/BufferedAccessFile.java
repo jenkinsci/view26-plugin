@@ -6,9 +6,7 @@ import java.io.RandomAccessFile;
 import java.nio.charset.Charset;
 
 /**
- * @author trongle
- * @version 10/23/2015 1:20 AM trongle $
- * @since 1.0
+ * @author aneeshia
  */
 public class BufferedAccessFile extends RandomAccessFile {
   private static final int DEFAULT_BUFFER_SIZE = 256;

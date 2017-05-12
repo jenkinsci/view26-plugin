@@ -1,9 +1,7 @@
 package com.view26.ci.plugin.exception;
 
 /**
- * @author trongle
- * @version 10/28/2015 11:38 PM trongle $
- * @since 1.0
+ * @author aneeshia
  */
 public class StoreResultException extends Exception {
   public StoreResultException() {

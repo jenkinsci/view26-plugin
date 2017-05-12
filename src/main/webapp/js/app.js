@@ -2,12 +2,11 @@ view26.init();
 $j(document).ready(function () {
   setTimeout(function () {
     hideNoHelp();
-    disableView26Url(true);
+    disableView26Url(false);
   }, 1000)
 });
 
 function disableView26Url(disable) {
-  $j("input[name='config.url']").attr("value","https://actio9.actiotech.com");
   if (disable) {
     $j("input[name='config.url']").attr('readonly', 'readonly');
   }

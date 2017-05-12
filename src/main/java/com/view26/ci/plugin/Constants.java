@@ -4,9 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * @author trongle
- * @version 12/29/2015 2:52 PM trongle $
- * @since 1.0
+ * @author aneeshia
  */
 public class Constants {
   private Constants() {

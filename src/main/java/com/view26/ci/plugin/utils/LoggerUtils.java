@@ -4,9 +4,7 @@ import java.io.PrintStream;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author trongle
- * @version 11/23/2015 11:29 AM trongle $
- * @since 1.0
+ * @author aneeshia
  */
 public class LoggerUtils {
   private LoggerUtils() {

@@ -18,7 +18,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * @author anpham
+ * @author aneeshia
  */
 @ExportedBean
    public class StatisticsAction extends Actionable implements Action {

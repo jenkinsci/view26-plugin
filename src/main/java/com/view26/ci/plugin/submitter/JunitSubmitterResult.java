@@ -1,9 +1,7 @@
 package com.view26.ci.plugin.submitter;
 
 /**
- * @author trongle
- * @version 10/21/2015 2:37 PM trongle $
- * @since 1.0
+ * @author aneeshia
  */
 public class JunitSubmitterResult {
   public static final String STATUS_SUCCESS = "Completed";

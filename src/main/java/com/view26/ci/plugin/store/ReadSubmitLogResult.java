@@ -5,9 +5,7 @@ import com.view26.ci.plugin.model.SubmittedResult;
 import java.util.Map;
 
 /**
- * @author trongle
- * @version 12/4/2015 5:06 PM trongle $
- * @since 1.0
+ * @author aneeshia
  */
 public class ReadSubmitLogResult {
   private long total;

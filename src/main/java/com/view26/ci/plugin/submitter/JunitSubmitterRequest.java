@@ -7,9 +7,7 @@ import hudson.model.BuildListener;
 import java.util.List;
 
 /**
- * @author trongle
- * @version 10/21/2015 2:37 PM trongle $
- * @since 1.0
+ * @author aneeshia
  */
 public class JunitSubmitterRequest {
   private Configuration configuration;

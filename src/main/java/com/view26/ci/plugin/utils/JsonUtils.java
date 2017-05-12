@@ -20,9 +20,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * @author trongle
- * @version 10/21/2015 2:24 PM trongle $
- * @since 1.0
+ * @author aneeshia
  */
 public class JsonUtils {
   public static final String UTC_DATE_FORMAT = "yyyy-MM-dd'T'HH:mm:ss.SSSZZ";

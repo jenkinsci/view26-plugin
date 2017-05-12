@@ -9,8 +9,8 @@ import java.io.File;
 import java.net.URLConnection;
 
 /**
- * @author trongle
- * @version 11/2/2015 11:20 AM trongle $
+ * @author aneeshia
+ * @version 11/2/2015 11:20 AM aneeshia $
  * @since 1.0
  */
 public class TestAbstracts {

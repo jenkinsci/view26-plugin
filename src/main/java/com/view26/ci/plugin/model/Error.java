@@ -1,7 +1,7 @@
 package com.view26.ci.plugin.model;
 
 /**
- * @author anpham
+ * @author aneeshia
  * 
  */
 public class Error {

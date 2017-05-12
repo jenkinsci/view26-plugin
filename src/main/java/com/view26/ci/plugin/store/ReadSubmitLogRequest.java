@@ -3,9 +3,7 @@ package com.view26.ci.plugin.store;
 import hudson.model.AbstractProject;
 
 /**
- * @author trongle
- * @version 12/4/2015 5:06 PM trongle $
- * @since 1.0
+ * @author aneeshia
  */
 public class ReadSubmitLogRequest {
   private AbstractProject project;

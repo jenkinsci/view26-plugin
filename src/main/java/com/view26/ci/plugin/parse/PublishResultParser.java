@@ -13,7 +13,7 @@ import java.util.GregorianCalendar;
 import java.util.List;
 
 /**
- * @author anpham
+ * @author aneeshia
  */
 public class PublishResultParser implements TestResultParser {
 

@@ -5,7 +5,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.view26.ci.plugin.utils.JsonUtils;
 
 /**
- * @author anpham
+ * @author aneeshia
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class AutomationTestResponse {

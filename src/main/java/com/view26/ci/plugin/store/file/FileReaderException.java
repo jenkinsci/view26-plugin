@@ -1,9 +1,7 @@
 package com.view26.ci.plugin.store.file;
 
 /**
- * @author trongle
- * @version 10/23/2015 1:35 AM trongle $
- * @since 1.0
+ * @author aneeshia
  */
 public class FileReaderException extends RuntimeException {
   public FileReaderException() {

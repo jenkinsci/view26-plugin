@@ -34,8 +34,8 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 /**
- * @author trongle
- * @version 11/2/2015 11:19 AM trongle $
+ * @author aneeshia
+ * @version 11/2/2015 11:19 AM aneeshia $
  * @since 1.0
  */
 public class JunitTestResultParserTests extends TestAbstracts {

@@ -17,9 +17,7 @@ import java.util.logging.Logger;
 /**
  * scan test result with auto detect JUnit test result location
  *
- * @author trongle
- * @version 11/2/2015 9:13 AM trongle $
- * @since 1.0
+ * @author aneeshia
  */
 public class AutoScanParser extends PatternScanParser {
   private static final Logger LOG = Logger.getLogger(AutoScanParser.class.getName());

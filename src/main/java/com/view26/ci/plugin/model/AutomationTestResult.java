@@ -8,7 +8,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * @author anpham
+ * @author aneeshia
  */
 public class AutomationTestResult {
   private String name;

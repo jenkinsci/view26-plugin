@@ -36,9 +36,7 @@ import java.util.Map;
 import static org.apache.http.conn.ssl.SSLSocketFactory.ALLOW_ALL_HOSTNAME_VERIFIER;
 
 /**
- * @author trongle
- * @version 10/21/2015 2:09 PM trongle $
- * @since 1.0
+ * @author aneeshia
  */
 public class HttpClientUtils {
   public static Integer RETRY_MAX_COUNT = 3;

@@ -6,7 +6,7 @@ import hudson.tasks.junit.CaseResult;
 import org.apache.commons.lang.StringUtils;
 
 /**
- * @author anpham
+ * @author aneeshia
  */
 public class AutomationAttachment {
   private String name;

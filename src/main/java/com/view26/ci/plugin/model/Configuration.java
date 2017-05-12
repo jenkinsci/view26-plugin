@@ -7,7 +7,7 @@ import hudson.model.Descriptor;
 import org.kohsuke.stapler.DataBoundConstructor;
 
 /**
- * @author anpham
+ * @author aneeshia
  */
 public class Configuration extends AbstractDescribableImpl<Configuration> {
   private Long id;

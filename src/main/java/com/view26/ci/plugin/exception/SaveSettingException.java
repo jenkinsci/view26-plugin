@@ -1,9 +1,7 @@
 package com.view26.ci.plugin.exception;
 
 /**
- * @author trongle
- * @version 11/19/2015 3:21 PM trongle $
- * @since 1.0
+ * @author aneeshia
  */
 public class SaveSettingException extends Exception {
   private int status;

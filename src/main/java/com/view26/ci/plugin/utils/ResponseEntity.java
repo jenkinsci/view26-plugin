@@ -1,9 +1,7 @@
 package com.view26.ci.plugin.utils;
 
 /**
- * @author trongle
- * @version 10/22/2015 8:16 PM trongle $
- * @since 1.0
+ * @author aneeshia
  */
 public class ResponseEntity {
   private final String body;

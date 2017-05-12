@@ -3,7 +3,7 @@ package com.view26.ci.plugin.model;
 import java.util.List;
 
 /**
- * @author anpham
+ * @author aneeshia
  * 
  */
 public class AutomationTestResultWrapper {

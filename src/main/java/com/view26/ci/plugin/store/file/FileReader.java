@@ -11,9 +11,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * @author trongle
- * @version 10/23/2015 1:12 AM trongle $
- * @since 1.0
+ * @author aneeshia
  */
 public class FileReader implements Closeable, AutoCloseable {
   // Shared across all instances

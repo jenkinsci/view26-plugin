@@ -1,8 +1,10 @@
 package com.view26.ci.plugin;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import com.view26.ci.plugin.action.PushingResultAction;
 import com.view26.ci.plugin.exception.SaveSettingException;
+import com.view26.ci.plugin.exception.SubmittedException;
 import com.view26.ci.plugin.model.Configuration;
 import com.view26.ci.plugin.model.view26.Setting;
 import com.view26.ci.plugin.utils.ClientRequestException;
@@ -20,14 +22,13 @@ import org.apache.commons.httpclient.HttpStatus;
 import org.apache.commons.lang.StringUtils;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * @author trongle
- * @version 10/22/2015 11:05 PM trongle $
- * @since 1.0
+ * @author aneeshia
  */
 public class ConfigService {
   private static final Logger LOG = Logger.getLogger(ConfigService.class.getName());
@@ -74,7 +75,22 @@ public class ConfigService {
    * @return
    */
   public static Boolean validateApiKey(String url, String apiKey) {
-    return !StringUtils.isEmpty(OauthProvider.getAccessToken(url, apiKey));
+
+    Boolean valid = true;
+    StringBuilder sb = new StringBuilder()
+            .append(url)
+            .append("/datasources/jenkins/validate?key=").append(HttpClientUtils.encode(apiKey));
+    Map<String, String> headers = new HashMap<>();
+    try{
+      ResponseEntity responseEntity = HttpClientUtils.get(sb.toString(), headers);
+      if (HttpStatus.SC_OK != responseEntity.getStatusCode()) {
+        LOG.log(Level.WARNING, String.format("Invalid API key: %s", apiKey));
+        return !valid;
+      }
+    } catch (Exception e){
+      return !valid;
+    }
+    return valid;
   }
 
   /**

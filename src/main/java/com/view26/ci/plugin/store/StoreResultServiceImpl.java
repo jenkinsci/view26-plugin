@@ -19,9 +19,7 @@ import java.io.IOException;
 import java.util.*;
 
 /**
- * @author trongle
- * @version 10/22/2015 9:20 PM trongle $
- * @since 1.0
+ * @author aneeshia
  */
 public class StoreResultServiceImpl implements StoreResultService {
   /**

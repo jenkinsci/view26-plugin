@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * scan with configured test results location pattern
  *
- * @author anpham
+ * @author aneeshia
  */
 public class PatternScanParser implements TestResultParser {
   /**

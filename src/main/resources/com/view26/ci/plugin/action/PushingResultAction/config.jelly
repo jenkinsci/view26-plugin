@@ -53,17 +53,7 @@
           <f:textbox name="config.resultPattern" value="${instance.configuration.resultPattern}"></f:textbox>
         </f:entry>
       </f:radioBlock>
-      <!--<f:radioBlock inline="true" name="config.readFromJenkins" checked="${!instance.configuration.readFromJenkins}"-->
-                    <!--title="${%label.readFromJenkins}" value="false">-->
-      <!--</f:radioBlock>-->
     </f:entry>
-    <!--<f:description>-->
-      <!--<i>${%label.resultPatternTitle}</i>-->
-    <!--</f:description>-->
-    <!--<f:entry title="${%label.resultPattern}" field="resultPattern">-->
-      <!--<f:textbox name="config.resultPattern" value="${instance.configuration.resultPattern}"></f:textbox>-->
-    <!--</f:entry>-->
-
     
     <f:entry title="${%label.selection_mode}" field="selectionMode">
       <f:radioBlock inline="true" name="config.eachMethodAsTestCase" title="${%label.class_mode}" 

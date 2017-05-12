@@ -3,9 +3,7 @@ package com.view26.ci.plugin.model;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 /**
- * @author trongle
- * @version 10/22/2015 9:37 PM trongle $
- * @since 1.0
+ * @author aneeshia
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class SubmittedResult {

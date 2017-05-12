@@ -41,7 +41,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * @author anpham
+ * @author aneeshia
  */
 public class PushingResultAction extends Notifier {
   private static final Logger LOG = Logger.getLogger(PushingResultAction.class.getName());
@@ -182,15 +182,15 @@ public class PushingResultAction extends Notifier {
         result = junitSubmitter.submit(tempReq);
 
     } catch (SubmittedException e) {
-      LoggerUtils.formatError(logger, "Cannot submit test results to view26:");
+      LoggerUtils.formatError(logger, "Cannot submit test results to View26:");
       LoggerUtils.formatError(logger, "   status code: " + e.getStatus());
       LoggerUtils.formatError(logger, "   error: " + e.getMessage());
     } catch (Exception e) {
-      LoggerUtils.formatError(logger, "Cannot submit test results to view26:");
+      LoggerUtils.formatError(logger, "Cannot submit test results to View26:");
       LoggerUtils.formatError(logger, "   error: " + e.getMessage());
     } finally {
 
-      Boolean isSuccess = null != result;
+      Boolean isSuccess = (null != result) && JunitSubmitterResult.STATUS_SUCCESS.equals(result.getSubmittedStatus());
       LoggerUtils.formatHR(logger);
       LoggerUtils.formatInfo(logger, isSuccess ? "SUBMIT SUCCESS" : "SUBMIT FAILED");
       LoggerUtils.formatHR(logger);
@@ -256,12 +256,12 @@ public class PushingResultAction extends Notifier {
       return new PushingResultAction(configuration);
     }
 
-    public FormValidation doCheckAppSecretKey(@QueryParameter String value, @AncestorInPath AbstractProject project)
+    public FormValidation doCheckAppSecretKey(@QueryParameter String value, @QueryParameter("config.url") final String url, @AncestorInPath AbstractProject project)
             throws IOException, ServletException {
       if (StringUtils.isEmpty(value))
         return FormValidation.error(ResourceBundle.MSG_INVALID_API_KEY);
-//      if (!ConfigService.validateApiKey("https://actio9.actiotech.com", value))
-//        return FormValidation.error(ResourceBundle.MSG_INVALID_API_KEY);
+      if (!ConfigService.validateApiKey(url, value))
+        return FormValidation.error(ResourceBundle.MSG_INVALID_API_KEY);
       return FormValidation.ok();
     }
 

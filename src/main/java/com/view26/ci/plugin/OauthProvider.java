@@ -13,9 +13,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * @author trongle
- * @version 10/23/2015 5:22 PM trongle $
- * @since 1.0
+ * @author aneeshia
  */
 public class OauthProvider {
   private static final Logger LOG = Logger.getLogger(OauthProvider.class.getName());

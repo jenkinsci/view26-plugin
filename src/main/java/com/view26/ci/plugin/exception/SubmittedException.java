@@ -1,9 +1,7 @@
 package com.view26.ci.plugin.exception;
 
 /**
- * @author trongle
- * @version 11/2/2015 3:12 PM trongle $
- * @since 1.0
+ * @author aneeshia
  */
 public class SubmittedException extends Exception {
   private int status;

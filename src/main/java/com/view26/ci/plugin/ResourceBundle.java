@@ -3,7 +3,7 @@ package com.view26.ci.plugin;
 import org.jvnet.localizer.ResourceBundleHolder;
 
 /**
- * @author anpham
+ * @author aneeshia
  */
 public class ResourceBundle {
   private static final ResourceBundle INSTANCE = new ResourceBundle();

@@ -5,9 +5,7 @@ import com.view26.ci.plugin.model.SubmittedResult;
 import hudson.model.AbstractProject;
 
 /**
- * @author trongle
- * @version 10/22/2015 9:20 PM trongle $
- * @since 1.0
+ * @author aneeshia
  */
 public interface StoreResultService {
   /**

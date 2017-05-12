@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import hudson.tasks.junit.CaseResult;
 
 /**
- * @author anpham
+ * @author aneeshia
  */
 public class AutomationTestLog {
   @JsonProperty("description")

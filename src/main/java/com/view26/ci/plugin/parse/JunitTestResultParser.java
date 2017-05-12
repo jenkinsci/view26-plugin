@@ -7,14 +7,12 @@ import org.apache.commons.lang.StringUtils;
 import java.util.List;
 
 /**
- * @author trongle
- * @version 11/2/2015 9:13 AM trongle $
- * @since 1.0
+ * @author aneeshia
  */
 public class JunitTestResultParser {
   public static List<AutomationTestResult> parse(ParseRequest request) throws Exception {
     TestResultParser parser;
-    Boolean readFromJenkins = true; // request.getConfiguration().getReadFromJenkins();
+    Boolean readFromJenkins = request.getConfiguration().getReadFromJenkins();
     if (Boolean.FALSE.equals(readFromJenkins)) {
       LoggerUtils.formatInfo(request.getListener().getLogger(), "Read test results from jenkins.");
       //read result from testResult action from Jenkins

@@ -9,7 +9,8 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by actio9 on 3/5/17.
+ * @author aneeshia
+ * Created on 3/5/17.
  */
 public class SubmittedDataColumnMeta {
     @JsonProperty("name")

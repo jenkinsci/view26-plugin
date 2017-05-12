@@ -12,9 +12,7 @@ import java.util.List;
 /**
  * Register a menu in left sidebar of jenkins
  *
- * @author trongle
- * @version 10/21/2015 1:45 PM trongle $
- * @since 1.0
+ * @author aneeshia
  */
 @Extension
 public class JunitView26Extension extends TransientProjectActionFactory {
