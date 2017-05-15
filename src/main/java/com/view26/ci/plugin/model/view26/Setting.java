@@ -5,8 +5,8 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
- * @author trongle
- * @version 10/28/2015 11:22 AM trongle $
+ * @author aneeshia
+ * @version 10/28/2015 11:22 AM aneeshia $
  * @since 1.0
  */
 @JsonIgnoreProperties(ignoreUnknown = true)

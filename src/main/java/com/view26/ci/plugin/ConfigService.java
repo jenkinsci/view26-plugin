@@ -1,10 +1,8 @@
 package com.view26.ci.plugin;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import com.view26.ci.plugin.action.PushingResultAction;
 import com.view26.ci.plugin.exception.SaveSettingException;
-import com.view26.ci.plugin.exception.SubmittedException;
 import com.view26.ci.plugin.model.Configuration;
 import com.view26.ci.plugin.model.view26.Setting;
 import com.view26.ci.plugin.utils.ClientRequestException;

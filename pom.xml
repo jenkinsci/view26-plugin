@@ -127,7 +127,7 @@
                 <groupId>org.jenkins-ci.tools</groupId>
                 <artifactId>maven-hpi-plugin</artifactId>
                 <configuration>
-                    <disabledTestInjection>true</disabledTestInjection>
+                    <disabledTestInjection>false</disabledTestInjection>
                 </configuration>
             </plugin>
             <plugin>
