@@ -6,7 +6,6 @@
         <version>2.6</version>
         <relativePath/>
     </parent>
-    <groupId>com.view26.ci.jenkins</groupId>
     <artifactId>view26</artifactId>
     <version>1.0.0</version>
     <packaging>hpi</packaging>
