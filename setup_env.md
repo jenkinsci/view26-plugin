@@ -20,6 +20,4 @@
  4. copy to local
   - cp target\view26.hpi \\192.168.74.80\Jenkins\view26.hpi
  
-- Repo store hpi versions: http://repo.jenkins-ci.org/releases/com/qasymphony/ci/jenkins/view26/
-- Cloudbees: https://jenkins.ci.cloudbees.com/job/plugins/job/view26-plugin/
-- https://wiki.jenkins-ci.org/display/JENKINS/Hosting+Plugins
+- https://docs-view26.atlassian.net/wiki/display/VIEW/VIEW26+Jenkins+Plugin

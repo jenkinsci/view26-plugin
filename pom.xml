@@ -12,6 +12,7 @@
     <name>View26 Test-Reporting Plugin</name>
     <description>This plugin collects and reports unit test results to View26. It supports any testing frameworks which are capable of generating JUnit XML format test reports.
     </description>
+    <url>https://docs-view26.atlassian.net/wiki/display/VIEW/VIEW26+Jenkins+Plugin</url>
     <licenses>
         <license>
             <name>MIT License</name>

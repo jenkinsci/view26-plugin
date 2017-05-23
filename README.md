@@ -17,3 +17,5 @@ Major features include
 ### About VIEW26
 
 View26™ is a powerful analytics solution designed for software quality assurance professionals. View26™ brings to you features like instant dashboards, end-to-end integration to popular testing tools, built-in capability to merge and correlate multiple testing tools or data sources, complete mobility and many more.
+
+https://docs-view26.atlassian.net/wiki/display/VIEW/VIEW26+Jenkins+Plugin
