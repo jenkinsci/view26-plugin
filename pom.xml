@@ -7,7 +7,7 @@
         <relativePath />
     </parent>
     <artifactId>view26</artifactId>
-    <version>1.0.6-SNAPSHOT</version>
+    <version>1.0.6</version>
     <packaging>hpi</packaging>
     <name>View26 Test-Reporting Plugin</name>
     <description>This plugin collects and reports unit test results to View26. It supports any testing frameworks which are capable of generating JUnit XML format test reports.
@@ -34,7 +34,7 @@
         <connection>scm:git:git://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
         <developerConnection>scm:git:git@github.com:jenkinsci/${project.artifactId}-plugin.git</developerConnection>
         <url>http://github.com/jenkinsci/${project.artifactId}-plugin</url>
-        <tag>HEAD</tag>
+        <tag>view26-1.0.6</tag>
     </scm>
     <developers>
         <developer>
