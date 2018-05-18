@@ -32,7 +32,7 @@ public class Configuration extends AbstractDescribableImpl<Configuration> {
   private Boolean readFromJenkins;
   private String resultPattern;
   private Boolean eachMethodAsTestCase;
-
+  private String testerName;
 
   public static Configuration newInstance() {
     return new Configuration(0L, "", "", 0, "", 0L, "", 0, "", 0, 0, false, "");
@@ -64,6 +64,14 @@ public class Configuration extends AbstractDescribableImpl<Configuration> {
   public Configuration setId(Long id) {
     this.id = id;
     return this;
+  }
+
+  public String getTesterName() {
+    return testerName;
+  }
+
+  public void setTesterName(String testerName) {
+    this.testerName = testerName;
   }
 
   public String getUrl() {
@@ -210,7 +218,8 @@ public class Configuration extends AbstractDescribableImpl<Configuration> {
       ", jenkinsProjectName='" + jenkinsProjectName + '\'' +
       ", readFromJenkins=" + readFromJenkins +
       ", resultPattern='" + resultPattern + '\'' +
-       ", eachMethodAsTestCase='" + eachMethodAsTestCase + '\'' +
+      ", eachMethodAsTestCase='" + eachMethodAsTestCase + '\'' +
+      ", testerName='" + testerName + '\'' +
       '}';
   }
 

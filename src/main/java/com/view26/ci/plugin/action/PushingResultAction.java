@@ -177,8 +177,17 @@ public class PushingResultAction extends Notifier {
                 .setBuildNumber(build.getNumber() + "")
                 .setBuildPath(build.getUrl())
                 .setProjectName(build.getEnvironment().get("JOB_NAME")) // For accessing Project name/ Job name
-                .setUserName(((Cause.UserIdCause) build.getCause(Cause.UserIdCause.class)).getUserName()) // For accessing username
+
                 .setListener(listener);
+        try{
+            String testerName = configuration.getTesterName();
+            if(StringUtils.isNotBlank(testerName))
+                tempReq.setUserName(testerName);
+            else
+                tempReq.setUserName(((Cause.UserIdCause) build.getCause(Cause.UserIdCause.class)).getUserName()); // For accessing username
+        }catch (Exception e){
+            tempReq.setUserName("anonymous");
+        }
         result = junitSubmitter.submit(tempReq);
 
     } catch (SubmittedException e) {
@@ -239,10 +248,15 @@ public class PushingResultAction extends Notifier {
 
     @Override
     public Publisher newInstance(StaplerRequest req, JSONObject formData) throws hudson.model.Descriptor.FormException {
-
+      String testerName = "";
+      try {
+        testerName = User.current().getDisplayName();
+      }catch(Exception e){}
       Configuration configuration = req.bindParameters(Configuration.class, "config.");
       configuration.setJenkinsServerUrl(HttpClientUtils.getServerUrl(req));
       configuration.setReadFromJenkins(true);
+      if (!StringUtils.isBlank(testerName))
+          configuration.setTesterName(testerName);
       configuration.setEachMethodAsTestCase(formData.getBoolean("eachMethodAsTestCase"));
       configuration = ConfigService.validateConfiguration(configuration, formData);
 
