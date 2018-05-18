@@ -91,11 +91,11 @@ public class TestResultFromxUnit extends TestAbstracts {
     configuration.setReadFromJenkins(true);
     configuration.setProjectName("TestResultFromxUnitProject");
 //    configuration.setAppSecretKey("34428172-cdba-4c97-aefb-b2ee5ae5db99");
-    configuration.setAppSecretKey("5d65f50e-b368-47a1-9bff-e0a710011a3f");
+    configuration.setAppSecretKey("BKxyz7DmKEel");
     configuration.setReleaseId(1L);
     configuration.setId(1L);
     configuration.setProjectId(1L);
-    configuration.setUrl("https://actio9.actiotech.com");
+    configuration.setUrl("https://jira-plugin.view26.com");
     configuration.setJenkinsProjectName("TestResultFromxUnitProject");
     configuration.setJenkinsServerUrl("http://localhost:8080/jenkins");
 
@@ -125,11 +125,11 @@ public class TestResultFromxUnit extends TestAbstracts {
     String buildNumber = "1";
     String buildPath = "/jobs/TestResultFromxUnitProject/" + buildNumber;
     String projectName = "TestResultFromxUnitProject";
-    String apiKey = "5d65f50e-b368-47a1-9bff-e0a710011a3f";
+    String apiKey = "BKxyz7DmKEel";
     Long releaseId = 1L;
     Long ciId = 1L;
     Long view26ProjectId = 1L;
-    Configuration configuration = new Configuration(ciId, "https://actio9.actiotech.com", apiKey, view26ProjectId, projectName,
+    Configuration configuration = new Configuration(ciId, "https://jira-plugin.view26.com", apiKey, view26ProjectId, projectName,
       releaseId, "releaseName", 0L, "environment", 0L, 0L, false, "");
 
     configuration.setResultPattern("*.xml");

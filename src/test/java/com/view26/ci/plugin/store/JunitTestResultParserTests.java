@@ -116,11 +116,11 @@ public class JunitTestResultParserTests extends TestAbstracts {
     String buildNumber = "1";
     String buildPath = "/jobs/AntProjectWithXMLContent/" + buildNumber;
     String projectName = "AntProjectWithXMLContent";
-    String apiKey = "9d3971a6-f6d7-4e0b-996c-e2ade023b4e8";
+    String apiKey = "BKxyz7DmKEel";
     Long releaseId = 1L;
     Long ciId = 1L;
     Long view26ProjectId = 3L;
-    Configuration configuration = new Configuration(ciId, "https://actio9.actiotech.com", apiKey, view26ProjectId, projectName,
+    Configuration configuration = new Configuration(ciId, "https://jira-plugin.view26.com", apiKey, view26ProjectId, projectName,
       releaseId, "releaseName", 0L, "environment", 0L, 0L, false, "");
     Map<String, String> headers = OauthProvider.buildHeaders(configuration.getUrl(), configuration.getAppSecretKey(), null);
     AutomationTestService.push(userName, testSet, buildNumber, buildPath, automationTestResultList, configuration, headers);
@@ -134,11 +134,11 @@ public class JunitTestResultParserTests extends TestAbstracts {
     String buildNumber = "1";
     String buildPath = "/jobs/TestPerformance/" + buildNumber;
     String projectName = "TestPerformance";
-    String apiKey = "3c76feb4-b91f-4a53-8643-bd1ce2f01a3e";
+    String apiKey = "BKxyz7DmKEel";
     Long releaseId = 1L;
     Long ciId = 3L;
     Long view26ProjectId = 1L;
-    Configuration configuration = new Configuration(ciId, "https://actio9.actiotech.com", apiKey, view26ProjectId, projectName,
+    Configuration configuration = new Configuration(ciId, "https://jira-plugin.view26.com", apiKey, view26ProjectId, projectName,
       releaseId, "releaseName", 0L, "environment", 0L, 0L, false, "");
     List<AutomationTestResult> results = new ArrayList<>();
     int total = 1000;
@@ -173,11 +173,11 @@ public class JunitTestResultParserTests extends TestAbstracts {
     String buildNumber = "1";
     String buildPath = "/jobs/TestPerformance/" + buildNumber;
     String projectName = "TestPerformance";
-    String apiKey = "3c76feb4-b91f-4a53-8643-bd1ce2f01a3e";
+    String apiKey = "BKxyz7DmKEel";
     Long releaseId = 1L;
     Long ciId = 3L;
     Long view26ProjectId = 1L;
-    Configuration configuration = new Configuration(ciId, "https://actio9.actiotech.com", apiKey, view26ProjectId, projectName,
+    Configuration configuration = new Configuration(ciId, "https://jira-plugin.view26.com", apiKey, view26ProjectId, projectName,
       releaseId, "releaseName", 0L, "environment", 0L, 0L, false, "");
     List<AutomationTestResult> results = new ArrayList<>();
     long start = System.currentTimeMillis();
