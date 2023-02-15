@@ -26,7 +26,7 @@
     <properties>
         <findbugs.skip>true</findbugs.skip>
         <jackson.version>2.6.3</jackson.version>
-        <junit.plugin.version>1.9</junit.plugin.version>
+        <junit.plugin.version>1166.va_436e268e972</junit.plugin.version>
         <httpclient.version>4.5.1</httpclient.version>
         <jenkins.version>2.2</jenkins.version>
     </properties>
